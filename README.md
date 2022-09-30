@@ -16,7 +16,5 @@ GameFlex is an application that lets users track the games they've beaten in ord
 
 ## Lessons Learned:
 
-Having never built a time based application I grossly underestimated the complexity in dealing with time and more importnatnly how we all deal with and handle it differently. For this reason to make things simpler this app uses the 'us-en' specification only. In the futue I would to make this more globaly accessible. 
-
-creating solid schemas is crucial when relying on so much information from teh database. 
+tailwinds is a great way to speeed up the development of your front end code, and daisyUI is a great additional resource for it.
 
