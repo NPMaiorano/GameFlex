@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div>
+        <h1>Game Flex</h1>
+        <ul>
+        <% todos.forEach( el => { %>
+            <li class='gameTitle' data-id='<%=el._id%>'>
+                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.title %> - <%= el.difficulty %></span>
+                <span class='del'> Delete </span>
+            </li>
+        <% }) %>    
+        </ul>
+
+        <h2><%= user.userName %> has <%= left %> games to flex about.</h2>
+
+        <form action="/todos/createTodo" method='POST'>
+            <input type="text" placeholder="Enter Game Title" name='gameTitle'>
+            <input type="text" placeholder="Enter Game Difficulty" name='gameDifficulty'>
+            <input type="submit">
+        </form>
+
+        <a href="/logout">Logout</a>
+    </div>
+    <div>
+
+    </div>
+
+    <div class="overflow-x-auto">
+        <table class="table w-full">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Job</th>
+              <th>Favorite Color</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- row 1 -->
+            <tr>
+              <th>1</th>
+              <td>Cy Ganderton</td>
+              <td>Quality Control Specialist</td>
+              <td>Blue</td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
