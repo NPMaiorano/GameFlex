@@ -5,7 +5,6 @@ GameFlex is an application that lets users track the games they've beaten in ord
 
 **Link to project HERE:** 
 
-![alt tag](http://placecorgi.com/1200/650)
 
 ## How It's Made:
 
